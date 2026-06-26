@@ -68,10 +68,7 @@
     }
 
     .hero-teaser video {
-      width: 65%;
-      height: auto;
-      display: block;
-      margin: 0 auto;
+      width: 100%;
       border-radius: 16px;
       box-shadow: 0 18px 50px rgba(15, 23, 42, 0.13);
       background: #0f172a;
@@ -122,12 +119,17 @@
       .publication-title {
         font-size: 2rem !important;
       }
-    
-      .hero-teaser video {
-        width: 100%;
-      }
     }
   </style>
+
+  <script>
+    var password = "kim";
+    var input = prompt("Please enter the access password to view this project:");
+    if (input !== password) {
+      alert("Incorrect password. Access denied.");
+      window.location.href = "https://github.com";
+    }
+  </script>
 </head>
 
 <body>
@@ -274,7 +276,8 @@
         <div class="column is-8">
           <div class="content has-text-centered text-muted">
             <p>
-              This page summarizes a small inchworm-inspired locomotion prototype built for academic presentation purposes.
+              This page summarizes a small inchworm-inspired locomotion prototype built for academic
+              presentation and project-portfolio purposes.
             </p>
           </div>
         </div>
